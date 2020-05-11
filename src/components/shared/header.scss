@@ -1,0 +1,13 @@
+@import "scss/references.scss";
+
+.c-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  &_list {
+    display: flex;
+  }
+  &_item {
+    @include create-menu-item();
+  }
+}

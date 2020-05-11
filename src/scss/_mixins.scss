@@ -1,0 +1,47 @@
+@mixin create-gradient($color-base, $color-secondary) {
+  background-color: $color-base;
+  background-image: linear-gradient(315deg, $color-base 0%, $color-secondary 74%);
+}
+
+@mixin create-container() {
+  width: 65%;
+  padding-top: 4vw; 
+  height: 100vh;
+  margin: 0 auto;
+}
+
+@mixin create-title() {
+  color: $title-color;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@mixin create-subtitle() {
+  color: $subtitle-color;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@mixin create-text() {
+  color: $text-color;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@mixin create-anchor() {
+  color: $anchor-color;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+@mixin create-menu-item() {
+  &:not(:last-child) {
+    margin-right: 1.1rem;
+  }
+  > a {
+    color: $menu-item-color;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+}
+
