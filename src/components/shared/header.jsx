@@ -2,7 +2,7 @@ import React from "react"
 import './header.scss'
 
 const Header = () => (
-  <header className="c-header">
+  <div className="c-header">
     <ul className="c-header_list">
       <li className="c-header_item">
         <a href="#">Home</a>
@@ -17,7 +17,7 @@ const Header = () => (
         <a href="#">Blog</a>
       </li>
     </ul>
-  </header>
+  </div>
 )
 
 export default Header

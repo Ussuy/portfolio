@@ -4,34 +4,39 @@
 }
 
 @mixin create-container() {
-  width: 65%;
-  padding-top: 4vw; 
-  height: 100vh;
+  width: 80%;
+  height: 90vh;
   margin: 0 auto;
 }
 
 @mixin create-title() {
   color: $title-color;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @mixin create-subtitle() {
   color: $subtitle-color;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: clamp(25px, 3vw, 35px);
 }
 
 @mixin create-text() {
   color: $text-color;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
 }
 
 @mixin create-anchor() {
   color: $anchor-color;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+@mixin create-subsubtitle() {
+  color: gray;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 24px);
 }
 
 @mixin create-menu-item() {
@@ -41,7 +46,7 @@
   > a {
     color: $menu-item-color;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: clamp(14px, 2vw, 30px);
   }
 }
 

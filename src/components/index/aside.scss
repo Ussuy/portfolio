@@ -1,0 +1,39 @@
+@import "scss/references.scss";
+
+.c-aside {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  &_label {
+    @include create-subsubtitle();
+  }
+  &_subtitle {
+    @include create-subtitle();
+    margin: 2.5% 0 5% 0;
+  }
+  &_description {
+    @include create-text();
+  } 
+  
+  &_link {
+    @include create-anchor();
+    margin-top: 10%;
+    border-bottom: 1px solid $anchor-color;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: -50%;
+      bottom: 10%;
+      border-bottom: 1px solid $anchor-color;
+      border-right: 1px solid $anchor-color;
+      transform: rotate(-45deg);
+    }
+  }
+
+}

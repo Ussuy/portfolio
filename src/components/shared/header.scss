@@ -1,11 +1,18 @@
 @import "scss/references.scss";
 
 .c-header {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin: 0 auto;
+  width: 75%;
   &_list {
     display: flex;
+    justify-content: flex-end;
   }
   &_item {
     @include create-menu-item();
